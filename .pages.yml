@@ -1,0 +1,71 @@
+media:
+  input: media
+  output: /media
+  rename: safe
+  categories: [image]
+content:
+  - name: site
+    label: Site settings & homepage
+    type: file
+    path: content/site.json
+    fields:
+      - {name: brand, label: Brand name, type: string}
+      - {name: tagline, label: Brand tagline, type: string}
+      - {name: heroEyebrow, label: Hero small caption, type: string}
+      - {name: heroTitle, label: Hero headline, type: string, description: 'May use em tags for italic emphasis.'}
+      - {name: heroDescription, label: Hero description, type: text}
+      - {name: heroImage, label: Homepage hero banner image, type: image}
+      - {name: heroImageAlt, label: Banner accessibility text, type: string}
+      - {name: announcement, label: Announcement bar, type: string}
+      - {name: aboutTitle, label: About headline, type: string}
+      - {name: aboutText, label: About biography, type: text}
+      - {name: contactEmail, label: Public contact email, type: string}
+      - {name: instagram, label: Instagram URL, type: string}
+      - {name: linkedin, label: LinkedIn URL, type: string}
+      - {name: calendly, label: Booking link, type: string}
+      - {name: whatsapp, label: WhatsApp URL, type: string}
+      - {name: seoDescription, label: Search description, type: text}
+      - {name: currencyNote, label: Pricing note, type: text}
+      - {name: bookingNote, label: Booking note, type: text}
+      - {name: footerLine, label: Footer line, type: string}
+  - name: projects
+    label: Portfolio projects
+    type: file
+    path: content/projects.json
+    fields:
+      - name: items
+        label: Projects
+        type: object
+        list: {collapsible: {collapsed: true, summary: '{title}'}}
+        fields:
+          - {name: title, label: Project title, type: string}
+          - {name: category, label: Category, type: select, options: {values: [Social Media, Islamic Flyers, Banners, Reels, Thumbnails, T-shirt Design, Branding]}}
+          - {name: year, label: Year, type: string}
+          - {name: description, label: Description, type: text}
+          - {name: image, label: Artwork image, type: image}
+          - {name: alt, label: Image alt text, type: string}
+          - {name: featured, label: Feature on home, type: boolean}
+  - name: pricing
+    label: Pricing & packages
+    type: file
+    path: content/pricing.json
+    fields:
+      - name: packages
+        label: Packages
+        type: object
+        list: true
+        fields:
+          - {name: name, type: string}
+          - {name: subtitle, type: string}
+          - {name: pk, label: Pakistan price, type: string}
+          - {name: usd, label: International price, type: string}
+          - {name: features, type: string, list: true}
+      - name: addOns
+        label: Services & single item prices
+        type: object
+        list: true
+        fields:
+          - {name: name, type: string}
+          - {name: pk, label: Pakistan price, type: string}
+          - {name: usd, label: International price, type: string}
+          - {name: description, type: text}
