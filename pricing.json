@@ -1,0 +1,8 @@
+{
+ "packages":[
+  {"name":"Starter","subtitle":"For a fresh, consistent presence","pk":"Rs. 12,000","usd":"$79","features":["5 social media designs","1 cover or banner","2 revision rounds","Islamic flyer add-on available"]},
+  {"name":"Growth","subtitle":"For growing programs and campaigns","pk":"Rs. 28,000","usd":"$179","features":["12 social media designs","2 banners","2 reel covers","3 revision rounds","Islamic flyer add-on available"]},
+  {"name":"Impact","subtitle":"For multi-channel campaigns","pk":"Rs. 55,000","usd":"$349","features":["20 social media designs","4 banners","4 reel covers","4 revision rounds","Islamic flyer add-on available"]}
+ ],
+ "addOns":[{"name":"Islamic flyer design","pk":"Rs. 4,000","usd":"$30","description":"Single event, course, conference or fundraiser flyer. Starting price, negotiable."},{"name":"Extra social post","pk":"Custom quote","usd":"Custom quote","description":"Available as additional creative."},{"name":"Reel editing","pk":"Custom quote","usd":"Custom quote","description":"Quoted by duration and editing complexity."},{"name":"T-shirt graphics","pk":"Custom quote","usd":"Custom quote","description":"Original custom graphics, no printing included."}]
+}
